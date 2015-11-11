@@ -29,7 +29,7 @@ Contributing
 
 Cool, do it, I don't really do this stuff often. You need the following:
 - something that will execute a *really* simple shell script
-- [Coffeescript](http://coffeescript.org), install it from your (favourite package manager)[http://brew.sh]
+- [Coffeescript](http://coffeescript.org), install it from your [favourite package manager](http://brew.sh)
 - `cat(1)`
 
 Then just run `build.sh` and it should output `something-smiley.user.js`.
