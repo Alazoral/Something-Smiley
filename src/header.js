@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Something Smiley
 // @namespace    http://leonspencer.net
-// @version      0.2
+// @version      0.3
 // @description  lets you reply to something awful posts with smilies
 // @author       Leon Spencer
 // @require      http://coffeescript.org/extras/coffee-script.js

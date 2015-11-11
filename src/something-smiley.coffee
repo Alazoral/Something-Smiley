@@ -6,7 +6,6 @@ smileyform = $("<div id='smileyform'></div>")
 smileyclick = (event) ->
   postid = $(event.target).parents('table.post')[0].id
   fb.child(postid).child(username).set(event.target.title)
-  console.log("setting result to", event, event.target, event.target.title)
   smileyform.hide()
 formbtn = $("<button>Smiley Reply</button>")
 btnclick = (event) ->
@@ -33,7 +32,6 @@ fbs.on 'value', (ssnap) ->
       .appendTo($(@).find(".postbuttons"))
 
     postfb.on "child_added", (snap) ->
-      console.log(smilies, snap.val())
       el = $("<img></img>")
         .attr("src", smilies[snap.val()])
         .attr("title", snap.key())

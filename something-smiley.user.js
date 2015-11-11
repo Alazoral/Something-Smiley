@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Something Smiley
 // @namespace    http://leonspencer.net
-// @version      0.1
+// @version      0.3
 // @description  lets you reply to something awful posts with smilies
 // @author       Leon Spencer
 // @require      http://coffeescript.org/extras/coffee-script.js
@@ -23,7 +23,6 @@
     var postid;
     postid = $(event.target).parents('table.post')[0].id;
     fb.child(postid).child(username).set(event.target.title);
-    console.log("setting result to", event, event.target, event.target.title);
     return smileyform.hide();
   };
 
@@ -47,7 +46,6 @@
       formbtn.clone().click(btnclick).appendTo("<li></li>").appendTo($(this).find(".postbuttons"));
       return postfb.on("child_added", function(snap) {
         var el;
-        console.log(smilies, snap.val());
         el = $("<img></img>").attr("src", smilies[snap.val()]).attr("title", snap.key());
         return el.appendTo(smileybox);
       });
