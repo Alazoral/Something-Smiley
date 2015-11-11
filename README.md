@@ -24,9 +24,21 @@ Then you give it the URL of the script: http://FIXME
 Again, if you can't work out how to do this please stay away, it's just a
 proof of concept and I am **not going to help you out of your new nightmare world.
 
-My original proposal:
-> One of the problems about the forum software is that in swift-moving and popular (aka, good) threads you have to either wade through 1000 pages of emptyquotes, 'same's, and complements, content-free flames and so on, to get the good shit. We can vote up or down entire threads, but that can't target a post, and a single user doesn't really have an impact on it. Obviously responding to things on a forum is important, and the chronologically ordered linear post format is central to the forums, but I feel that there might be a design/technical solution out there that could make the forums better.
+Contributing
+------------
 
-> My idea: what if you could reply to anyone's post with a smiley? Rather than listing these smiley replies as individual posts, each post would have a tally, beside it, in that huge gap under the user's avatar. There would be a button next to the reply button that would disclose a smiley picker, first listing the ones other people have already picked.
+Cool, do it, I don't really do this stuff often. You need the following:
+- something that will execute a *really* simple shell script
+- Coffeescript, install it from your favourite package manager
+- `cat(1)`
 
-> By compressing low-content replies to zero post space the signal to noise ratio would thus increase tremendously. It would also reduce the threshold for interaction for lurkers and new posters, allowing a shallow end, so to speak, allowing more people to join our little internet gang. It would reduce database overhead. And it would further incentivise new smiley purchases, further allowing Lowtax to eat food on a regular basis.
+Then just run `build.sh` and it should output `something-smiley.user.js`.
+
+Original Proposal
+-----------------
+
+One of the problems about the forum software is that in swift-moving and popular (aka, good) threads you have to either wade through 1000 pages of emptyquotes, 'same's, and complements, content-free flames and so on, to get the good shit. We can vote up or down entire threads, but that can't target a post, and a single user doesn't really have an impact on it. Obviously responding to things on a forum is important, and the chronologically ordered linear post format is central to the forums, but I feel that there might be a design/technical solution out there that could make the forums better.
+
+My idea: what if you could reply to anyone's post with a smiley? Rather than listing these smiley replies as individual posts, each post would have a tally, beside it, in that huge gap under the user's avatar. There would be a button next to the reply button that would disclose a smiley picker, first listing the ones other people have already picked.
+
+By compressing low-content replies to zero post space the signal to noise ratio would thus increase tremendously. It would also reduce the threshold for interaction for lurkers and new posters, allowing a shallow end, so to speak, allowing more people to join our little internet gang. It would reduce database overhead. And it would further incentivise new smiley purchases, further allowing Lowtax to eat food on a regular basis.
