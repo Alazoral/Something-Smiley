@@ -23,6 +23,7 @@
     var postid;
     postid = $(event.target).parents('table.post')[0].id;
     fb.child(postid).child(username).set(event.target.title);
+    console.log("setting result to", event, event.target, event.target.title);
     return smileyform.hide();
   };
 
@@ -37,15 +38,16 @@
     smilies = ssnap.val();
     for (name in smilies) {
       src = smilies[name];
-      $("<img>").attr("src", src).appendTo("<button></button>").click(smileyclick).appendTo(smileyform);
+      $("<img>").attr("src", src).attr("title", name).appendTo("<button></button>").click(smileyclick).appendTo(smileyform);
     }
     return $('table.post').each(function() {
       var postfb, smileybox;
       postfb = fb.child(this.id);
       smileybox = $("<dd class='smilies'><h6>Smiley Replies</h6></dd>").appendTo($(this).find('dl.userinfo'));
       formbtn.clone().click(btnclick).appendTo("<li></li>").appendTo($(this).find(".postbuttons"));
-      return postfb.on("child_added", function(snap, uname) {
+      return postfb.on("child_added", function(snap) {
         var el;
+        console.log(smilies, snap.val());
         el = $("<img></img>").attr("src", smilies[snap.val()]).attr("title", snap.key());
         return el.appendTo(smileybox);
       });
