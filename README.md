@@ -17,9 +17,9 @@ Installation
 ------------
 
 You need to get an extension for your web browser that does userscripts.
-I use Tampermonkey on Safari, but other setups *may* work!
+I use [Tampermonkey](http://tampermonkey.net) on [Safari](http://apple.com/safari), but other setups *may* work!
 
-Then you give it the URL of the script: http://FIXME
+Then you give it the URL of the script: http://ADDME
 
 Again, if you can't work out how to do this please stay away, it's just a
 proof of concept and I am **not going to help you out of your new nightmare world.
@@ -29,7 +29,7 @@ Contributing
 
 Cool, do it, I don't really do this stuff often. You need the following:
 - something that will execute a *really* simple shell script
-- Coffeescript, install it from your favourite package manager
+- [Coffeescript](http://coffeescript.org), install it from your (favourite package manager)[http://brew.sh]
 - `cat(1)`
 
 Then just run `build.sh` and it should output `something-smiley.user.js`.
