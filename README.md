@@ -19,10 +19,10 @@ Installation
 You need to get an extension for your web browser that does userscripts.
 I use [Tampermonkey](http://tampermonkey.net) on [Safari](http://apple.com/safari), but other setups *may* work!
 
-Then you give it the URL of the script: http://ADDME
+Then, just [click here to Install](https://github.com/Alazoral/Something-Smiley/raw/master/something-smiley.user.js). Your extension should keep it up to date for you.
 
 Again, if you can't work out how to do this please stay away, it's just a
-proof of concept and I am **not going to help you out of your new nightmare world.
+proof of concept and I am **not** going to help you out of your new nightmare world.
 
 Contributing
 ------------
